@@ -20,4 +20,18 @@ then push the code to repository.
 
 git push origin
 
-git branch --set-upstream-to=<remote>/<branch> test1
+git branch --set-upstream-to=<remote>/<branch> 
+
+If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+
+ If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+
+The current branch test1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin test1
+
