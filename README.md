@@ -18,3 +18,4 @@ git remote add angular-mosh https://github.com/kokilapatelus/Angular-mosh.git
 
 then push the code to repository.
 
+git push origin
