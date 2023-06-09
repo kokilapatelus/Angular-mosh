@@ -19,3 +19,5 @@ git remote add angular-mosh https://github.com/kokilapatelus/Angular-mosh.git
 then push the code to repository.
 
 git push origin
+
+git branch --set-upstream-to=<remote>/<branch> test1
