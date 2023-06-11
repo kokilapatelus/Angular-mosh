@@ -1,0 +1,41 @@
+
+To stop port which are already in use
+
+netstat -a -n -o
+
+
+NG Generate Commands help syntex:
+
+  ng generate   <schematic>              Run the provided schematic.                                         [default]
+  ng generate app-shell                Generates an application shell for running a server-side version of an app.  
+  ng generate application [name]       Generates a new basic application definition in the "projects" subfolder of  
+                                       the workspace.                                                 [aliases: app]
+  ng generate class [name]             Creates a new, generic class definition in the given project.   [aliases: cl]
+  ng generate component [name]         Creates a new, generic component definition in the given project.[aliases: c]
+  ng generate directive [name]         Creates a new, generic directive definition in the given project.[aliases: d]
+  ng generate enum [name]              Generates a new, generic enum definition in the given project.   [aliases: e]
+  ng generate guard [name]             Generates a new, generic route guard definition in the given project.        
+                                                                                                        [aliases: g]
+  ng generate interceptor [name]       Creates a new, generic interceptor definition in the given project.
+  ng generate interface [name] [type]  Creates a new, generic interface definition in the given project.[aliases: i]
+  ng generate library [name]           Creates a new, generic library project in the current workspace.
+                                                                                                      [aliases: lib]
+  ng generate module [name]            Creates a new, generic NgModule definition in the given project. [aliases: m]
+  ng generate pipe [name]              Creates a new, generic pipe definition in the given project.     [aliases: p]
+  ng generate resolver [name]          Generates a new, generic resolver definition in the given project.
+                                                                                                        [aliases: r]
+  ng generate service [name]           Creates a new, generic service definition in the given project.  [aliases: s]
+  ng generate service-worker           Pass this schematic to the "run" command to create a service worker
+  ng generate web-worker [name]        Creates a new, generic web worker definition in the given project.
+
+
+To avoid generating test files like (directive/component.spec.ts) files go to angular.json file and inside schematic tag type below command and save it.  it will stop generating spec files in the project.
+
+"schematics": {
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:component": {
+          "skipTests": true
+        }
+
