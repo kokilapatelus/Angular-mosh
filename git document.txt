@@ -1,0 +1,62 @@
+git branch --set-upstream-to=https://github.com/kokilapatelus/Angular-mosh.git/test1
+
+
+git pull https://github.com/kokilapatelus/Angular-mosh.git
+
+
+Important git command to add to remote git hub repository. //Initial Commit git init
+
+//Staging area git add. or git add -A
+
+sending files with commit message. git commit -m "first commit"
+
+copying files to github.com
+
+First create new github repository with plue icon on the right top corner.
+go to that repository and copy url.
+Now run the below command to push to github. 
+
+
+git remote add angular-mosh https://github.com/kokilapatelus/Angular-mosh.git
+git fetch
+
+then push the code to repository.
+
+git push origin
+
+git branch --set-upstream-to=/
+
+If you are planning on basing your work on an upstream hint: branch that already exists at the remote, you may need to hint: run "git fetch" to retrieve it.
+
+If you are planning to push out a new local branch that hint: will track its remote counterpart, you may want to use hint: "git push -u" to set the upstream config as you push.
+
+The current branch test1 has no upstream branch. To push the current branch and set the remote as upstream, use
+
+git push --set-upstream origin test1
+
+Creating a local branch at git local maching
+git branch <branchname>
+ex git branch firstbranch
+
+Merging local branch with main or master branch
+go to destination branch where we want to merge from the other branch and apply below command.
+
+git merge <sourcebranch>
+git merge firstbranch
+
+
+ssh key generation technic
+1)ssh-keygen
+
+copy ssh key with below command
+you will see this kind of lines in cmd
+Your identification has been saved in Your identification has been saved in /c/Users/kokil/.ssh/id_rsa  copy this path and paste it with cat command.
+2)cat /c/Users/kokil/.ssh/id_rsa 
+
+it will generate ssh key in a text format just copy it.
+
+3) Copy and add this ssh key to your github account.
+
+4) For authenticating at github.com account you will need to run below command.   you will have to copy ssh path and paste it after ssh -T
+ssh -T git@github.com
+
